@@ -17,3 +17,39 @@ cd FatMan
 python -m venv .venv
 source .venv/bin/activate  # ou .venv\Scripts\activate no Windows
 pip install -r requirements.txt
+
+⚙️ Configuração
+Crie o arquivo .env com base no .env.example:
+
+ini
+Copiar
+Editar
+PRIVATE_KEY=SuaChavePrivada
+WALLET=SeuEnderecoWallet
+RPC_URL=https://bsc-dataseed.binance.org/
+▶️ Execução
+bash
+Copiar
+Editar
+python fatman_executor.py
+📄 Licença
+MIT
+
+yaml
+Copiar
+Editar
+
+---
+
+### ✅ 2. `.env.example`
+
+```env
+PRIVATE_KEY=CHAVE_PRIVADA_AQUI
+WALLET=0xSEU_ENDERECO
+RPC_URL=https://bsc-dataseed.binance.org/
+✅ 3. requirements.txt
+txt
+Copiar
+Editar
+web3
+python-dotenv
